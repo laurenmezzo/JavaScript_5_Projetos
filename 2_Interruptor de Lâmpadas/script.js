@@ -8,6 +8,12 @@ btnOn.addEventListener("click", () =>{
     lamp.classList.remove("lampOff");
     contaClicks++;
     console.log(contaClicks);
+    if (contaClicks > 20){
+        lamp.classList.add("lampBreak");
+        lamp.classList.remove("lampOn");
+        lamp.classList.remove("lampOff");
+        document.getElementById("p").innerHTML = "Você quebrou a lâmpada!";
+    }
 });
 
 btnOff.addEventListener("click", () => {
@@ -15,11 +21,10 @@ btnOff.addEventListener("click", () => {
     lamp.classList.remove("lampOn");
     contaClicks++;
     console.log(contaClicks);
+    if (contaClicks > 20){
+        lamp.classList.add("lampBreak");
+        lamp.classList.remove("lampOn");
+        lamp.classList.remove("lampOff");
+        document.getElementById("p").innerHTML = "Você quebrou a lâmpada!";
+    }
 });
-
-if (contaClicks > 20){
-    classList.add("lampBreak");
-    classList.remove("lampOn");
-    classList.remove("lampOff");
-    //adicionar texto dizendo "vc quebrou a lampada :("
-};
