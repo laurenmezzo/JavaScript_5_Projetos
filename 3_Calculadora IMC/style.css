@@ -1,0 +1,32 @@
+*{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1{
+    width:100%;
+}
+main{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    float:left;
+    
+}
+main div{
+    height:350px;
+    width: 350px;
+    background-color:burlywood;
+}
+aside{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    float:left;
+}
+aside table{
+    width:350px;
+    height:350px;
+}
