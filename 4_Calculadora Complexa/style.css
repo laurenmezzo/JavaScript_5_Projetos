@@ -10,7 +10,7 @@ body{
 }
 main{
     width:400px;
-    height:530px;
+    height:500px;
     background-color:rgb(255, 158, 203);
     border-radius:30px;
     margin-top: 10px;
@@ -42,6 +42,12 @@ button{
     background-color:rgb(253, 253, 243);
     border-radius:10px;
 }
-#equal{
-    background-color:rgb(66, 171, 241);
+button:hover{
+    background-color:rgb(214, 214, 206);
+}
+#cAll{
+    background-color:rgb(250, 236, 173);
+}
+#cAll:hover{
+    background-color:rgb(179, 168, 124);
 }
