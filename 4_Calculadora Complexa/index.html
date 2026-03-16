@@ -2,10 +2,39 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>titulo</title>
+    <title>Calculadora semi-científica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <input id="display" readonly>
+        <div id="buttonGrid">
+            <button onclick="expAppendToDisplay()">xʸ</button>
+            <button onclick="sqrtAppendToDisplay()">√x</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="clearLast()">CE</button>
+            <button onclick="parAppendToDisplay('r')">(</button>
+            <button onclick="parAppendToDisplay('l')">)</button>
+            <button onclick="percent()">%</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="numAppendToDisplay('7')">7</button>
+            <button onclick="numAppendToDisplay('8')">8</button>
+            <button onclick="numAppendToDisplay('9')">9</button>
+            <button onclick="opAppendToDisplay('*')">*</button>
+            <button onclick="numAppendToDisplay('4')">4</button>
+            <button onclick="numAppendToDisplay('5')">5</button>
+            <button onclick="numAppendToDisplay('6')">6</button>
+            <button onclick="opAppendToDisplay('-')">-</button>
+            <button onclick="numAppendToDisplay('1')">1</button>
+            <button onclick="numAppendToDisplay('2')">2</button>
+            <button onclick="numAppendToDisplay('3')">3</button>
+            <button onclick="opAppendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay(ans)">Ans</button>
+            <button onclick="numAppendToDisplay('0')">0</button>
+            <button onclick="numAppendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
