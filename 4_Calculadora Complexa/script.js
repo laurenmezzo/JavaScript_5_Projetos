@@ -1,6 +1,7 @@
 // thanks to Bro Code on Youtube for making this script possible cuz I can't do ts on my own
 
 let display = document.getElementById("display");
+let form = document.getElementById("form");
 
 function numAppendToDisplay(input){
     display.value += input;
@@ -38,6 +39,11 @@ function clearLast(){
     console.log(display.value);
 };
 
+form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    calculate();
+    //thanks xJavaScript.com
+});
 function calculate(){
     try{
         display.value = eval(display.value);
